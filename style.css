@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+*{
+ 
+    box-sizing: border-box;
+    font-family:'Poppins' ;
+
+}
+@font-face {
+    font-family: 'Nutino';
+    src: url(./assets/font/NunitoSans_10pt_SemiExpanded-MediumItalic.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Nutino';
+    src: url(./assets/font/NunitoSans_10pt_SemiExpanded-ExtraLightItalic.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assets/font/Poppins-Regular.ttf);
+   
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+
+}
+
+
+

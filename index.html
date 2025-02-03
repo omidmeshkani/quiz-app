@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------------------------------------Link style.css ---------------------------------------------------------------------->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <title>Quiz App</title>
+  </head>
+  <body class="flex items-center justify-center bg-[#dddfeb] min-h-screen">
+    <!------------------------------------------------- APP ------------------------------------------------------------------------------------------------------------------------------>
+    <div
+      id="container"
+      class=""
+    >
+      <div  id="start-screen " class="    h-[600px] relative p-[30px] w-full max-w-[400px] bg-[#1f2847] overflow-hidden rounded-[10px] shadow-[0_0_10px_rgba(0,0,0,0.1)]">
+        <!------------------------------------------------- TITLE ----------------------------------------------------------------------------------------- -->
+        <h1
+          title="rrrrrrrrrr"
+          id="hearing"
+          class="text-[40px] text-center font-bold text-[#fff] mb-[50px]"
+        >
+          Quiz App
+        </h1>
+        <!------------------------------------------------ TIMER -------------------------------------------------------------------------------------- -->
+        <div id="timer" class="text-white text-xl font-bold text-center mb-4">
+          00
+        </div>
+        <!-- -------------------------------------------SETTING------------------------------------------------------------------------------------ -->
+        <div id="setting">
+          <!------------------------------------------- Number Question  ---------------------------------------------------------------------------------->
+          <label class="block text-xs text-[#fff]" for="num-question"
+            >Number of Question</label
+          >
+          <select id="num-question" class="bg-white" name="">
+            <option value="05">5</option>
+            <option value="010">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+          </select>
+          <!-----------------------------------------=----- Category  ---===================------------------------------------------------------------------------->
+          <label class="text-xs text-[#fff]" for="category">Category</label>
+          <select id="category" class="bg-white" name="">
+            <option value="general">General Knowledge</option>
+            <option value="science">Science</option>
+            <option value="math">Mathematics</option>
+            <option value="history">History</option>
+            <option value="sports">ورزشی</option>
+            <option value="sports">Sports</option>
+            <option value="sports">history</option>
+            <option value="sports">policics</option>
+            <option value="sports">art</option>
+            <option value="sports">vehicls</option>
+          </select>
+          <!------------------------------------------------ Deffculty ------------------------------------------------------------------- -->
+          <label class="block text-xs text-[#fff]" for="Difficulty"
+            >Select of Difficulty</label
+          >
+          <select id="Difficulty" class="bg-white" name="">
+            <option value="5">Any Difficulty</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+          </select>
+          <!------------------------------------------------ Deffculty ----------------------------------------------------------------- -->
+          <label class="block text-xs text-[#fff]" for="time"
+            >Select Time Per Question
+          </label>
+          <select id="time" class="bg-white time" name="">
+            <option value="10">10 seconds</option>
+            <option value="15">15 seconds</option>
+            <option value="20">20 seconds</option>
+            <option value="25">25 seonds</option>
+            <option value="30">30 seonds</option>
+            <option value="35">35 seonds</option>
+          </select>
+        </div>
+        <button
+          
+          onclick="startTimer()"
+          id="btn start"
+          class="w-full h-15 bg-[#0c80ef] rounded-[10px] text-white text-[18px] font-medium cursor-pointer  delay-300 active:shadow-lg active:shadow-blue-500/50 disabled:cursor-not-allowed"
+          title="start"
+          type="submit"
+        >
+          <a class="disabled:cursor-not-allowed" href="#">Start Quiz</a>
+        </button>
+      </div>
+    </div>
+  
+    <!-- --------------------------------------------JS Import-------------------------------------------------------------------- -->
+    <script src="./app.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+  </body>
+</html>
